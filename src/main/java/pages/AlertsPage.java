@@ -48,7 +48,7 @@ public class AlertsPage {
         driver.switchTo().alert().sendKeys(text);
     }
 
-    public String getResult() { // عندما اضغط على موافق من رسالة بوب اب ، سيظهر سطر مكتوب (( خارج )) مربع بوب اب
+    public String getResult() { 
         return driver.findElement(results).getText();
     }
 }
